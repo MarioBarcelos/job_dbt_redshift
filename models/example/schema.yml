@@ -19,3 +19,12 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: tb_compradores
+    description: "Retorar os principais compradores"
+    columns:
+      - name: Vendas_totais
+        description: "Totais de vendas por comprador"
+        tests:
+          - nao_negativo
+          - not_null
